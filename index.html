@@ -4,23 +4,36 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nevada Permit Solutions | Permit Drafting & Coordination</title>
-  <meta name="description" content="Nevada Permit Solutions helps contractors with site measurements, permit-ready plans, submittals, corrections, and coordination throughout Southern Nevada." />
+  <meta name="description" content="Nevada Permit Solutions helps Southern Nevada contractors with measurements, permit-ready drawings, submittals, corrections, and project coordination." />
+  <meta name="theme-color" content="#041221" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-laser" viewBox="0 0 64 64"><path d="M9 45h19l8-15h10l9 15"/><path d="M20 45v8m24-8v8M14 53h35"/><rect x="27" y="13" width="14" height="17" rx="2"/><path d="M34 13V7m-4 0h8M41 21h14M47 17l8 4-8 4"/><circle cx="34" cy="22" r="3"/></symbol>
+    <symbol id="icon-floorplan" viewBox="0 0 64 64"><path d="M8 8h48v48H8zM31 8v20H8m23 0h25M43 28v28M31 43H8m35 0h13"/><path d="M31 17h8m-8 8h8M16 43v-8m0 8h8"/></symbol>
+    <symbol id="icon-shower" viewBox="0 0 64 64"><path d="M14 53V25c0-9 7-16 16-16h3"/><path d="M33 9v8h9c7 0 12 5 12 12"/><path d="M48 31v3m-8-3v3m4 5v3m8-3v3m-12 5v3m8-3v3"/><path d="M8 53h48"/></symbol>
+    <symbol id="icon-kitchen" viewBox="0 0 64 64"><path d="M8 12h48v40H8zM8 30h48M25 12v40M43 12v40"/><path d="M12 18h9m8 0h10m8 0h5M12 37h9m8 0h10m8 0h5"/><circle cx="34" cy="40" r="4"/></symbol>
+    <symbol id="icon-addition" viewBox="0 0 64 64"><path d="M6 31 25 14l15 13 8-7 10 9v27H12V36"/><path d="M22 56V39h13v17M45 34v14M39 41h12"/></symbol>
+    <symbol id="icon-submit" viewBox="0 0 64 64"><path d="M14 7h27l9 9v41H14zM41 7v10h9"/><path d="M22 27h20M22 35h15M22 43h10"/><path d="m38 49 7-7 7 7M45 42v14"/></symbol>
+    <symbol id="icon-corrections" viewBox="0 0 64 64"><path d="M13 12h38v30H31L19 53V42h-6z"/><path d="M22 23h20M22 31h14"/><path d="M44 47a10 10 0 1 1-6-9"/><path d="m38 34 1 8 8-1"/></symbol>
+    <symbol id="icon-team" viewBox="0 0 64 64"><circle cx="23" cy="22" r="9"/><circle cx="43" cy="25" r="7"/><path d="M7 53c1-12 7-18 16-18s15 6 16 18M36 39c3-5 13-5 18 1 2 3 3 7 3 13"/></symbol>
+    <symbol id="icon-siteplan" viewBox="0 0 64 64"><path d="M8 9h48v46H8z"/><path d="M16 45 27 17l10 21 11-14"/><circle cx="27" cy="17" r="3"/><circle cx="37" cy="38" r="3"/><path d="M13 14h9m25 35h5"/></symbol>
+    <symbol id="icon-elevation" viewBox="0 0 64 64"><path d="M7 51h50M12 51V28l20-16 20 16v23"/><path d="M22 51V36h20v15M18 28h28M26 23h12"/></symbol>
+    <symbol id="icon-electrical" viewBox="0 0 64 64"><path d="M10 10h44v44H10z"/><path d="M21 18v12h11v16h11V29h9"/><circle cx="21" cy="18" r="3"/><circle cx="43" cy="46" r="3"/><path d="m34 18-5 9h6l-4 9"/></symbol>
+    <symbol id="icon-plumbing" viewBox="0 0 64 64"><path d="M12 12h20v12H20v12h25v16"/><path d="M45 52h8V35H32V24"/><circle cx="16" cy="18" r="4"/><path d="M28 36v10h8"/></symbol>
+  </svg>
+
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Nevada Permit Solutions home">
       <span class="brand-mark">NV</span>
       <span class="brand-copy"><strong>NEVADA</strong><small>PERMIT SOLUTIONS</small></span>
     </a>
     <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#services">Services</a><a href="#samples">Samples</a><a href="#process">Process</a><a href="#contact">Contact</a>
     </nav>
     <a class="phone-button" href="tel:+12093218722">(209) 321-8722</a>
   </header>
@@ -28,109 +41,79 @@
   <main id="top">
     <section class="hero">
       <div class="blueprint-grid" aria-hidden="true"></div>
-      <svg class="blueprint-drawing" viewBox="0 0 1200 650" aria-hidden="true">
-        <g class="draw-lines" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M700 90H1120V520H700Z"/>
-          <path d="M700 260H1120M880 90V520M980 260V520"/>
-          <path d="M735 135H842V225H735Z M925 135H1070V225H925Z"/>
-          <path d="M735 310H842V455H735Z M915 310H1065V455H915Z"/>
-          <path d="M700 250h35m110 0h70m150 0h55"/>
-          <path d="M768 520v-70m85 70v-70m205 70v-70"/>
-          <path d="M700 90l-45 45m465-45 45 45M700 520l-45-45m465 45 45-45"/>
-          <circle cx="790" cy="382" r="28"/><path d="M790 354v56m-28-28h56"/>
-          <path d="M930 340h95v70h-95zM945 355h65v40h-65z"/>
-        </g>
-      </svg>
+      <svg class="blueprint-drawing" viewBox="0 0 1200 650" aria-hidden="true"><g class="draw-lines" fill="none" stroke="currentColor" stroke-width="2"><path d="M700 90H1120V520H700Z"/><path d="M700 260H1120M880 90V520M980 260V520"/><path d="M735 135H842V225H735Z M925 135H1070V225H925Z"/><path d="M735 310H842V455H735Z M915 310H1065V455H915Z"/><path d="M700 250h35m110 0h70m150 0h55"/><path d="M768 520v-70m85 70v-70m205 70v-70"/><path d="M700 90l-45 45m465-45 45 45M700 520l-45-45m465 45 45-45"/><circle cx="790" cy="382" r="28"/><path d="M790 354v56m-28-28h56"/><path d="M930 340h95v70h-95zM945 355h65v40h-65z"/></g></svg>
       <div class="hero-content container">
         <p class="eyebrow">Permit drafting and coordination throughout Southern Nevada</p>
         <h1>We Handle<br>The Permit Process</h1>
         <h2>So You Can Focus on Your Clients.</h2>
         <p class="service-area">Las Vegas <span>•</span> Henderson <span>•</span> North Las Vegas <span>•</span> Clark County</p>
-        <a class="primary-button" href="#contact">Request a Consultation <span>→</span></a>
+        <div class="hero-actions"><a class="primary-button" href="#contact">Request a Consultation <span>→</span></a><a class="secondary-button" href="#samples">View Sample Plans</a></div>
       </div>
     </section>
 
     <section id="services" class="section container">
       <div class="section-heading"><p>What We Do</p><h2>Practical permit support that keeps projects moving.</h2></div>
       <div class="service-grid">
-        <article class="card"><div class="icon">⌖</div><h3>Site Measurements</h3><p>Field measurements and existing-condition documentation for permit plans.</p></article>
-        <article class="card"><div class="icon">▦</div><h3>Floor Plans</h3><p>Existing and proposed floor plans prepared for residential remodel projects.</p></article>
-        <article class="card"><div class="icon">♨</div><h3>Bathroom Remodels</h3><p>Clear permit-ready drawing packages for bathroom renovation work.</p></article>
-        <article class="card"><div class="icon">▤</div><h3>Kitchen Remodels</h3><p>Plans that document layout changes and coordinate affected trades.</p></article>
-        <article class="card"><div class="icon">⌂</div><h3>Room Additions</h3><p>Drafting and permit coordination for additions and expanded living areas.</p></article>
-        <article class="card"><div class="icon">⇧</div><h3>Permit Submittals</h3><p>Organized packages and support through the jurisdiction submission process.</p></article>
-        <article class="card"><div class="icon">↻</div><h3>Correction Responses</h3><p>Plan revisions and responses to building-department review comments.</p></article>
-        <article class="card"><div class="icon">◎</div><h3>Design Coordination</h3><p>Coordination with architects, engineers, contractors, and affected trades.</p></article>
+        <article class="card"><svg class="service-icon"><use href="#icon-laser"/></svg><h3>Site Measurements</h3><p>Field measurements and existing-condition documentation for permit plans.</p></article>
+        <article class="card"><svg class="service-icon service-icon-large"><use href="#icon-floorplan"/></svg><h3>Floor Plans</h3><p>Existing and proposed floor plans prepared for residential remodel projects.</p></article>
+        <article class="card"><svg class="service-icon"><use href="#icon-shower"/></svg><h3>Bathroom Remodels</h3><p>Clear permit-ready drawing packages for bathroom renovation work.</p></article>
+        <article class="card"><svg class="service-icon"><use href="#icon-kitchen"/></svg><h3>Kitchen Remodels</h3><p>Plans that document layout changes and coordinate affected trades.</p></article>
+        <article class="card"><svg class="service-icon"><use href="#icon-addition"/></svg><h3>Room Additions</h3><p>Drafting and permit coordination for additions and expanded living areas.</p></article>
+        <article class="card"><svg class="service-icon"><use href="#icon-submit"/></svg><h3>Permit Submittals</h3><p>Organized packages and support through the jurisdiction submission process.</p></article>
+        <article class="card"><svg class="service-icon"><use href="#icon-corrections"/></svg><h3>Correction Responses</h3><p>Plan revisions and responses to building-department review comments.</p></article>
+        <article class="card"><svg class="service-icon"><use href="#icon-team"/></svg><h3>Design Coordination</h3><p>Coordination with architects, engineers, contractors, and affected trades.</p></article>
       </div>
     </section>
 
     <section class="why-section">
+      <div class="container why-layout">
+        <div class="section-heading why-heading"><p>Why Contractors Choose Us</p><h2>More time for the jobsite. Less time chasing paperwork.</h2></div>
+        <div class="benefit-rotator" data-rotator aria-live="polite">
+          <div class="benefit-counter"><span data-benefit-number>01</span><small>/ 05</small></div>
+          <div class="benefit-copy"><h3 data-benefit-title>Save Time</h3><p data-benefit-text>Outsource measurements, drafting, and permit coordination so your team can stay productive.</p></div>
+          <div class="benefit-controls" aria-label="Contractor benefits"><button type="button" data-prev aria-label="Previous benefit">←</button><div class="benefit-dots" data-dots></div><button type="button" data-next aria-label="Next benefit">→</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="samples" class="projects-section">
       <div class="container">
-        <div class="section-heading"><p>Why Contractors Choose Us</p><h2>More time for the jobsite. Less time chasing paperwork.</h2></div>
-        <div class="benefit-grid">
-          <article><span>01</span><h3>Save Time</h3><p>Outsource measurements, drafting, and permit coordination.</p></article>
-          <article><span>02</span><h3>Reduce Delays</h3><p>Clear documentation and organized responses help prevent avoidable setbacks.</p></article>
-          <article><span>03</span><h3>Single Point of Contact</h3><p>One dedicated contact from initial review through permit approval.</p></article>
-          <article><span>04</span><h3>Local Experience</h3><p>Familiarity with Southern Nevada jurisdictions and review processes.</p></article>
-          <article><span>05</span><h3>Focus on Your Clients</h3><p>We handle permit coordination while you manage the work and client relationship.</p></article>
+        <div class="section-heading"><p>Sample Plan Packages</p><h2>See the level of detail included in our permit drawings.</h2><p class="section-note">These sample sheets have been anonymized for privacy. Select any example to open the full-size PDF in a new tab.</p></div>
+        <div class="sample-grid sample-grid-four">
+          <a class="sample-card sample-card-link" href="site-plan-cover.pdf" target="_blank" rel="noopener" aria-label="Open site plan and cover page PDF sample">
+            <img class="sample-preview" src="site-plan-cover.jpg" alt="Preview of a permit cover page with project data, vicinity map, site plan, and work areas" loading="lazy">
+            <div><h3>Site Plan & Cover Page</h3><p>Project information, vicinity map, site plan, work areas, and typical construction details.</p></div><span>View full PDF <b>↗</b></span>
+          </a>
+          <a class="sample-card sample-card-link" href="layout-plan.pdf" target="_blank" rel="noopener" aria-label="Open existing and proposed layout PDF sample">
+            <img class="sample-preview" src="layout-plan.jpg" alt="Preview of existing and proposed residential layouts with roof and construction details" loading="lazy">
+            <div><h3>Existing & Proposed Layout</h3><p>Existing conditions, proposed layout, keyed scope notes, roof layout, and supporting details.</p></div><span>View full PDF <b>↗</b></span>
+          </a>
+          <a class="sample-card sample-card-link" href="electrical-plan.pdf" target="_blank" rel="noopener" aria-label="Open electrical plan PDF sample">
+            <img class="sample-preview" src="electrical-plan.jpg" alt="Preview of current and proposed electrical plans with symbols and code notes" loading="lazy">
+            <div><h3>Electrical Plan</h3><p>Current and proposed lighting, receptacles, dedicated circuits, symbols, and electrical notes.</p></div><span>View full PDF <b>↗</b></span>
+          </a>
+          <a class="sample-card sample-card-link" href="plumbing-plan.pdf" target="_blank" rel="noopener" aria-label="Open plumbing plan PDF sample">
+            <img class="sample-preview" src="plumbing-plan.jpg" alt="Preview of current and proposed plumbing plans with water, waste, venting, and details" loading="lazy">
+            <div><h3>Plumbing Plan</h3><p>Current and proposed fixture locations, water and waste routing, venting, notes, and details.</p></div><span>View full PDF <b>↗</b></span>
+          </a>
         </div>
       </div>
     </section>
 
     <section id="process" class="section container">
       <div class="section-heading"><p>Our Process</p><h2>A straightforward path from field measurements to approval.</h2></div>
-      <div class="process-line">
-        <article><b>1</b><h3>Measure</h3><p>Document existing conditions.</p></article>
-        <article><b>2</b><h3>Draft</h3><p>Prepare the plan package.</p></article>
-        <article><b>3</b><h3>Coordinate</h3><p>Work with the project team.</p></article>
-        <article><b>4</b><h3>Submit</h3><p>Organize and submit documents.</p></article>
-        <article><b>5</b><h3>Permit Approved</h3><p>Respond to comments through approval.</p></article>
-      </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-      <div class="container">
-        <div class="section-heading"><p>Previous Projects</p><h2>Examples of the types of plan packages we prepare.</h2></div>
-        <div class="project-grid">
-          <article><div class="plan-art bathroom"></div><h3>Bathroom Remodel</h3></article>
-          <article><div class="plan-art kitchen"></div><h3>Kitchen Remodel</h3></article>
-          <article><div class="plan-art home"></div><h3>Whole Home Remodel</h3></article>
-        </div>
-      </div>
+      <div class="process-line"><article><b>1</b><h3>Measure</h3><p>Document existing conditions.</p></article><article><b>2</b><h3>Draft</h3><p>Prepare the plan package.</p></article><article><b>3</b><h3>Coordinate</h3><p>Work with the project team.</p></article><article><b>4</b><h3>Submit</h3><p>Organize and submit documents.</p></article><article><b>5</b><h3>Permit Approved</h3><p>Respond to comments through approval.</p></article></div>
     </section>
 
     <section id="contact" class="contact-section">
       <div class="container contact-layout">
-        <div class="contact-copy">
-          <p class="eyebrow">Ready to simplify your next permit?</p>
-          <h2>Tell us about your project.</h2>
-          <p>Send a quick overview and we’ll follow up to discuss the scope, timeline, and next steps.</p>
-          <div class="contact-details">
-            <a href="tel:+12093218722">(209) 321-8722</a>
-            <a href="mailto:office@nvpermits.com">office@nvpermits.com</a>
-            <span>Las Vegas • Henderson • North Las Vegas • Clark County</span>
-          </div>
-        </div>
-        <form name="permit-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
-          <input type="hidden" name="form-name" value="permit-request" />
-          <p class="hidden"><label>Do not fill this out: <input name="bot-field" /></label></p>
-          <label>Name<input name="name" type="text" required></label>
-          <label>Phone<input name="phone" type="tel" required></label>
-          <label>Email<input name="email" type="email" required></label>
-          <label>Project Type<select name="project-type"><option>Bathroom Remodel</option><option>Kitchen Remodel</option><option>Room Addition</option><option>Residential Remodel</option><option>Permit Revision</option><option>Other</option></select></label>
-          <label class="full">Project Details<textarea name="message" rows="5" required></textarea></label>
-          <button class="primary-button full" type="submit">Send Request <span>→</span></button>
-        </form>
+        <div class="contact-copy"><p class="eyebrow">Ready to simplify your next permit?</p><h2>Tell us about your project.</h2><p>Send a quick overview and we’ll follow up to discuss the scope, timeline, and next steps.</p><div class="contact-details"><a href="tel:+12093218722">(209) 321-8722</a><a href="mailto:office@nvpermits.com">office@nvpermits.com</a><span>Las Vegas • Henderson • North Las Vegas • Clark County</span></div></div>
+        <form name="permit-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form"><input type="hidden" name="form-name" value="permit-request" /><p class="hidden"><label>Do not fill this out: <input name="bot-field" /></label></p><label>Name<input name="name" type="text" required></label><label>Phone<input name="phone" type="tel" required></label><label>Email<input name="email" type="email" required></label><label>Project Type<select name="project-type"><option>Bathroom Remodel</option><option>Kitchen Remodel</option><option>Room Addition</option><option>Residential Remodel</option><option>Permit Revision</option><option>Other</option></select></label><label class="full">Project Details<textarea name="message" rows="5" required></textarea></label><button class="primary-button full" type="submit">Send Request <span>→</span></button></form>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-content">
-      <div class="brand"><span class="brand-mark">NV</span><span class="brand-copy"><strong>NEVADA</strong><small>PERMIT SOLUTIONS</small></span></div>
-      <p>© <span id="year"></span> Nevada Permit Solutions. All rights reserved.</p>
-    </div>
-  </footer>
+  <footer><div class="container footer-content"><div class="brand"><span class="brand-mark">NV</span><span class="brand-copy"><strong>NEVADA</strong><small>PERMIT SOLUTIONS</small></span></div><p>© <span id="year"></span> Nevada Permit Solutions. All rights reserved.</p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>

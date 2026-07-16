@@ -1,14 +1,21 @@
-# Nevada Permit Solutions
+# Nevada Permit Solutions Website
 
-Static one-page website for Nevada Permit Solutions.
+Version 1.1 landing page for Nevada Permit Solutions.
 
-## Local preview
-Open `index.html` in a browser.
+## Deployment
 
-## Netlify deployment
-1. Push these files to GitHub.
-2. Import the repository into Netlify.
-3. No build command is required.
-4. Publish directory: `/`
+The repository is connected to Netlify. Changes committed to the `main` branch deploy automatically.
 
-The contact form is configured for Netlify Forms.
+## Sample PDFs
+
+When redacted sample plans are ready, add them in a `samples/` folder and replace the placeholder text in the Sample Plan Packages section with links.
+
+
+## Version 1.1 sample PDFs
+The `samples/` directory contains four anonymized example sheets linked from the homepage:
+- Site plan and cover page
+- Existing and proposed layout
+- Electrical plan
+- Plumbing plan
+
+Preview images are stored in `assets/samples/`.
