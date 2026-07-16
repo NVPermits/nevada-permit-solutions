@@ -33,3 +33,36 @@
 @media(max-width:1100px){.container{width:min(940px,calc(100% - 48px))}.site-header{padding-left:24px;padding-right:24px}.blueprint-drawing{right:16px;width:44vw;opacity:.65}}
 @media(max-width:900px){.container{width:min(760px,calc(100% - 40px))}.blueprint-drawing{right:-12%;width:62vw;opacity:.38}.hero h1{max-width:520px}.hero h2{max-width:560px}}
 @media(max-width:600px){.container{width:min(100% - 28px,1080px)}.hero h1{font-size:54px}.hero h2{font-size:32px}.blueprint-drawing{right:-42%;width:105vw;opacity:.25}}
+
+
+/* Version 1.2 portfolio-first layout and authentic plan hero */
+.hero{overflow:hidden}
+.hero-content{position:relative;z-index:3;max-width:1080px}
+.hero-summary{max-width:620px;margin:24px 0 18px;color:#b9cde0;font-size:16px;line-height:1.7}
+.hero-plan-visual{position:absolute;z-index:2;right:max(24px,calc((100% - 1080px)/2));top:94px;width:min(44vw,510px);height:430px;perspective:1100px;pointer-events:none}
+.hero-plan-sheet{position:relative;width:100%;height:100%;overflow:hidden;border:1px solid rgba(90,167,255,.45);background:#062543;transform:rotateY(-7deg) rotateX(2deg);box-shadow:0 28px 65px rgba(0,0,0,.34),inset 0 0 45px rgba(38,126,224,.12);animation:planReveal 1.2s ease both}
+.hero-plan-sheet:before{content:"ARCHITECTURAL PLAN • EXISTING / PROPOSED";position:absolute;z-index:3;top:14px;left:16px;color:#8ac3ff;font:700 12px/1 "Barlow Condensed",sans-serif;letter-spacing:1.5px}
+.hero-plan-sheet:after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(3,18,33,.12),transparent 35%,rgba(3,18,33,.26)),repeating-linear-gradient(0deg,transparent 0 27px,rgba(83,161,255,.035) 28px),repeating-linear-gradient(90deg,transparent 0 27px,rgba(83,161,255,.035) 28px);box-shadow:inset 0 0 0 10px rgba(2,19,35,.16)}
+.hero-plan-sheet img{width:145%;height:120%;object-fit:cover;object-position:58% 45%;transform:translate(-18%,-7%);filter:grayscale(1) invert(1) sepia(.8) saturate(5) hue-rotate(175deg) brightness(.95) contrast(1.25);opacity:.52;mix-blend-mode:screen;animation:planDrift 18s ease-in-out infinite alternate}
+.plan-callout,.plan-dimension{position:absolute;z-index:4;color:#9bcaff;font-family:"Barlow Condensed",sans-serif;font-weight:700;text-shadow:0 0 12px rgba(50,141,255,.65)}
+.plan-callout{display:grid;place-items:center;width:30px;height:30px;border:1px solid currentColor;border-radius:50%;font-size:13px}
+.callout-one{top:88px;left:52px}.callout-two{bottom:64px;right:54px}.plan-dimension{font-size:12px;letter-spacing:.8px}
+.dimension-one{top:58px;right:44px}.dimension-two{left:22px;bottom:42px;transform:rotate(-90deg);transform-origin:left bottom}
+@keyframes planReveal{from{opacity:0;transform:translateX(38px) rotateY(-7deg) rotateX(2deg)}to{opacity:1;transform:translateX(0) rotateY(-7deg) rotateX(2deg)}}
+@keyframes planDrift{from{transform:translate(-18%,-7%) scale(1)}to{transform:translate(-15%,-5%) scale(1.025)}}
+.projects-section{padding:88px 0 94px;background:linear-gradient(180deg,#061a2d,#041423);border-bottom:1px solid var(--line)}
+.projects-section .section-heading{max-width:800px}
+.sample-grid-four{gap:20px}
+.sample-card-link{position:relative;background:linear-gradient(150deg,rgba(13,43,73,.96),rgba(4,19,34,.94));box-shadow:0 12px 28px rgba(0,0,0,.14)}
+.sample-preview{transition:transform .45s ease,filter .45s ease}
+.sample-card-link:hover .sample-preview{transform:scale(1.035);filter:brightness(.72) saturate(.85)}
+.sample-hover-overlay{position:absolute!important;top:0;left:0;right:0;aspect-ratio:11/7;z-index:3;display:flex!important;align-items:center;justify-content:center;margin:0!important;padding:0!important;border:0!important;background:rgba(2,18,34,.45);color:#fff!important;font-size:17px!important;letter-spacing:1px!important;opacity:0;transition:opacity .3s ease;pointer-events:none}
+.sample-card-link:hover .sample-hover-overlay{opacity:1}
+.sample-link-label{transition:color .2s ease}
+.sample-card-link:hover .sample-link-label{color:#9ac9ff}
+.section{scroll-margin-top:84px}
+@media(max-width:1000px){.hero-plan-visual{right:-70px;width:52vw;opacity:.65}.hero-summary{max-width:560px}.sample-grid-four{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.hero-plan-visual{right:-48%;top:100px;width:110vw;height:430px;opacity:.22}.hero-plan-sheet{transform:none}.hero-content{position:relative;z-index:4}.hero-summary{font-size:15px}.projects-section{padding:68px 0}.sample-grid-four{grid-template-columns:1fr}.sample-hover-overlay{display:none!important}}
+@media(prefers-reduced-motion:reduce){.hero-plan-sheet,.hero-plan-sheet img{animation:none}}
+
+.blueprint-drawing{display:none!important}
