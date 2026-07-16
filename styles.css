@@ -16,3 +16,20 @@
 .sample-card-link>span b{font-size:15px;margin-left:4px}
 @media(max-width:1050px){.sample-grid-four{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.sample-grid-four{grid-template-columns:1fr}.sample-card-link{min-height:0}}
+
+/* Version 1.1.1 layout and icon refinements */
+.container{width:min(1080px,calc(100% - 64px))}
+.site-header{padding-left:max(32px,calc((100% - 1080px)/2));padding-right:max(32px,calc((100% - 1080px)/2))}
+.hero{min-height:620px}
+.hero-content{padding:72px 0;max-width:1080px}
+.hero h1{font-size:clamp(60px,6.2vw,88px);max-width:560px}
+.hero h2{font-size:clamp(32px,3.4vw,48px);max-width:620px}
+.blueprint-drawing{right:max(28px,calc((100% - 1080px)/2));top:52px;width:min(43vw,500px);height:520px;color:rgba(91,161,255,.52)}
+.service-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{padding:28px 24px;min-height:235px}
+.card h3{margin-top:18px}
+.service-icon{width:58px;height:58px;stroke-width:2.2}
+.service-icon-large{width:64px;height:64px}
+@media(max-width:1100px){.container{width:min(940px,calc(100% - 48px))}.site-header{padding-left:24px;padding-right:24px}.blueprint-drawing{right:16px;width:44vw;opacity:.65}}
+@media(max-width:900px){.container{width:min(760px,calc(100% - 40px))}.blueprint-drawing{right:-12%;width:62vw;opacity:.38}.hero h1{max-width:520px}.hero h2{max-width:560px}}
+@media(max-width:600px){.container{width:min(100% - 28px,1080px)}.hero h1{font-size:54px}.hero h2{font-size:32px}.blueprint-drawing{right:-42%;width:105vw;opacity:.25}}
