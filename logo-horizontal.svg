@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="title desc">
+  <title id="title">Nevada Permit Solutions</title>
+  <desc id="desc">NV monogram with blueprint corner and dimension arrow beside the company name.</desc>
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#53A1FF"/>
+      <stop offset="1" stop-color="#1768E7"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#53A1FF" stroke-width="4" stroke-linecap="square">
+    <path d="M26 22V166M10 42H70M10 150H175"/>
+    <path d="M26 66V136" stroke-dasharray="9 9"/>
+    <path d="M175 150l-18-11v22z" fill="#53A1FF" stroke="none"/>
+  </g>
+  <g>
+    <path fill="#F8FBFF" d="M44 55h36l53 76V55h31v96h-35L75 75v76H44z"/>
+    <path fill="url(#blue)" d="M111 96h35l24 38 24-38h35l-59 86z" transform="translate(-12 -31)"/>
+  </g>
+  <path d="M252 30v128" stroke="#90A4B8" stroke-width="3" opacity=".75"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="285" y="86" fill="#F8FBFF" font-size="67" font-weight="800" letter-spacing="8">NEVADA</text>
+    <text x="287" y="130" fill="#53A1FF" font-size="30" font-weight="700" letter-spacing="8">PERMIT SOLUTIONS</text>
+    <path d="M288 154h48M690 154h48" stroke="#90A4B8" stroke-width="2"/>
+    <text x="351" y="160" fill="#AAB8C6" font-size="16" font-weight="600" letter-spacing="2.2">PERMIT DRAFTING &amp; COORDINATION</text>
+  </g>
+</svg>
